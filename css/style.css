@@ -1,0 +1,92 @@
+:root{
+  --nav:64px;
+  --bs-body-font-family:"Archivo",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --bs-body-color:#16191d;
+  --bs-dark:#16191d;
+  --bs-dark-rgb:22,25,29;
+  --bs-body-font-size: 2rem;
+}
+
+.sport{
+  --tint: #e4efe6;
+  scroll-margin-top: var(--nav);
+}
+.sport[data-id="ciclismo"]{
+  --tint: #e0ecf7;
+}
+.sport[data-id="hyrox"]{
+  --tint: #f8efc4;
+}
+.sport[data-id="running"]{
+  --tint: #fbe3dc;
+}
+.bg-tint{
+  background:var(--tint);
+}
+
+.navbar{
+  height:var(--nav);
+}
+.navbar-brand{
+  letter-spacing:-.04em;
+  font-size: 1.5rem;
+}
+.navbar .nav-link{
+  font-weight: 700;
+  color: var(--bs-body-color);
+  border-bottom: 3px solid transparent;
+  padding:.4rem 0;
+  margin:0 .6rem;
+}
+.navbar .nav-link:hover,.navbar .nav-link.active{
+  border-bottom-color: var(--bs-body-color);
+  color: var(--bs-body-color);
+}
+
+.container{
+  width: 100%; 
+}
+
+.scroll-video{
+  height:300vh
+}
+.stage{
+  position: sticky;
+  top:var(--nav);
+  height:calc(100svh - var(--nav));
+  overflow:hidden;
+}
+.stage video{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.stage .veil{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(to top,rgba(255,255,255,.88),rgba(255,255,255,0) 55%);
+}
+.stage h2{
+  font-size: clamp(3.5rem,13vw,11rem);
+  line-height:.85;
+  letter-spacing:-.05em;
+}
+.stage .progress{
+  height: 5px;
+  background:rgba(22,25,29,.12);
+}
+
+.card-img-top-wrap img{
+  object-fit:cover;
+  transition:transform .35s;
+}
+.card:hover img{
+  transform:scale(1.04);
+}
+@media (prefers-reduced-motion:reduce){
+  .card-img-top-wrap img{
+    transition:none;
+  }
+}
