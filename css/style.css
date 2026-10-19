@@ -1,10 +1,10 @@
 :root{
   --nav:64px;
-  --bs-body-font-family:"Archivo",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --bs-body-font-family:"Segoe UI",sans-serif;
   --bs-body-color:#16191d;
   --bs-dark:#16191d;
   --bs-dark-rgb:22,25,29;
-  --bs-body-font-size: 2rem;
+  /* --bs-body-font-size: 2rem; */
 }
 
 .sport{
@@ -44,7 +44,8 @@
 }
 
 .container{
-  width: 100%; 
+  width: 100vh;
+  grid: 0;
 }
 
 .scroll-video{
