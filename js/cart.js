@@ -71,6 +71,24 @@ const PRODUCTS = [{
   category: "Camiseta",
   price: 650,
   image: "./assets/images/cycling-wear.webp",
+}, {
+  id: "cycling-product-2",
+  name: "Benotto",
+  category: "Casco",
+  price: 850,
+  image: "./assets/images/cycling-casco.webp",
+}, {
+  id: "cycling-product-3",
+  name: "Rockbros",
+  category: "Calzado",
+  price: 1900,
+  image: "./assets/images/cycling-calzado.webp",
+}, {
+  id: "cycling-product-4",
+  name: "Benotto",
+  category: "Accesorio",
+  price: 500,
+  image: "./assets/images/cycling-spoter.webp",
 }];
 
 /**
