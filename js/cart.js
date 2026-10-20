@@ -40,12 +40,37 @@ function updateCartCount() {
   countElement.textContent = String(count);
 }
 
+// Lista de productos. Una estructura de datos donde importa
 const PRODUCTS = [{
   id: "hike-product-1",
   name: "The North Face",
   category: "Mochila",
   price: 1500,
   image: "./assets/images/1696322-500-580.png",
+}, {
+  id: "hike-product-2",
+  name: "The North Face",
+  category: "Chamarra",
+  price: 3500,
+  image: "./assets/images/1720464-500-580.png",
+}, {
+  id: "hike-product-3",
+  name: "The North Face woman",
+  category: "Chamarra",
+  price: 2200,
+  image: "./assets/images/1717414-500-580.png",
+}, {
+  id: "hike-product-4",
+  name: "The North Face woman",
+  category: "Chamarra",
+  price: 4200,
+  image: "./assets/images/1710130-500-580.png",
+}, {
+  id: "cycling-product-1",
+  name: "Trek",
+  category: "Camiseta",
+  price: 650,
+  image: "./assets/images/cycling-wear.webp",
 }];
 
 /**
