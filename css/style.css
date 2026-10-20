@@ -1,17 +1,18 @@
 :root{
   --nav:64px;
-  --bs-body-font-family:"Segoe UI",sans-serif;
+  --bs-body-font-family: "Archivo","Segoe UI",sans-serif;
   --bs-body-color:#16191d;
   --bs-dark:#16191d;
   --bs-dark-rgb:22,25,29;
   /* --bs-body-font-size: 2rem; */
 }
 
+/* Colores para los espacios de descripción de los deportes */
 .sport{
   --tint: #e4efe6;
   scroll-margin-top: var(--nav);
 }
-.sport[data-id="ciclismo"]{
+.sport[data-id="cycling"]{
   --tint: #e0ecf7;
 }
 .sport[data-id="hyrox"]{
@@ -43,10 +44,10 @@
   color: var(--bs-body-color);
 }
 
-.container{
+/* .container{
   width: 100vh;
   grid: 0;
-}
+} */
 
 .scroll-video{
   height:300vh
@@ -79,6 +80,7 @@
   background:rgba(22,25,29,.12);
 }
 
+/* Espacio para los productos */
 .card-img-top-wrap img{
   object-fit:cover;
   transition:transform .35s;
@@ -86,6 +88,7 @@
 .card:hover img{
   transform:scale(1.04);
 }
+/* Apaga las animaciones de los productos */
 @media (prefers-reduced-motion:reduce){
   .card-img-top-wrap img{
     transition:none;

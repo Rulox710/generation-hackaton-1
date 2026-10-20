@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Carrito | Ritmo</title>
+  
+  <!-- Bootstrap 5 (CSS) y Fuente Archivo -->
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/buy.css" rel="stylesheet"> 
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#menu" data-bs-root-margin="-45% 0px -50% 0px" data-bs-smooth-scroll="true"
+  tabindex="0">
+
+  <nav id="menu" class="navbar sticky-top bg-white border-bottom py-0" aria-label="Compras">
+    <div class="container-fluid px-3 px-md-5 flex-nowrap">
+      <a class="navbar-brand fw-black fw-bolder" href="#top">ritmo</a>
+      
+      <a class="fw-bold text-decoration-none text-body" href="./index.html">Seguir comprando</a>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+    <div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-4">
+      <div>
+        <p class="text-secondary small text-uppercase mb-1">Tu selección</p>
+        <h1 class="display-5 fw-bolder mb-0">Carrito de compra</h1>
+      </div>
+      <button id="clear-cart" class="btn btn-outline-dark btn-sm">Vaciar carrito</button>
+    </div>
+
+    <div id="cart-items" class="mb-4" aria-live="polite"></div>
+
+    <div id="cart-summary" class="row justify-content-end d-none">
+      <div class="col-12 col-md-6 col-lg-5">
+        <div class="border-top pt-3">
+          <div class="d-flex justify-content-between mb-2">
+            <span>Productos</span><span id="subtotal">$0 MXN</span>
+          </div>
+          <div class="d-flex justify-content-between mb-3">
+            <span>Envío</span><span>Por calcular</span>
+          </div>
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <span class="fw-bold">Subtotal</span><span id="total" class="cart-total">$0 MXN</span>
+          </div>
+          <button id="checkout" class="btn btn-dark btn-lg w-100">Continuar con la compra</button>
+          <p class="small text-secondary mt-3 mb-0">Demostración: esta página no procesa pagos reales ni genera pedidos.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="modal fade" id="checkout-modal" tabindex="-1" aria-labelledby="checkout-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-0">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5 fw-bold" id="checkout-title">Compra de demostración</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          El carrito funciona y los productos están guardados en este navegador :D
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Entendido</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="./js/cart-page.js"></script>
+</body>
+</html>

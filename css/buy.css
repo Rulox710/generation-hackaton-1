@@ -1,0 +1,19 @@
+body { 
+  --bs-body-font-family: "Archivo","Segoe UI",sans-serif;
+}
+
+.cart-image {
+  width: 88px;
+  height: 88px;
+  object-fit: cover;
+  background: #f4f4f4;
+}
+
+.quantity-control {
+  width: 76px;
+}
+
+.cart-total {
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 900;
+}

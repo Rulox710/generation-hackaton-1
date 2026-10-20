@@ -7,7 +7,7 @@
 
   <title>Ritmo</title>
 
-  <!-- Bootstrap 5 (CSS) -->
+  <!-- Bootstrap 5 (CSS) y Fuente Archivo -->
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -27,13 +27,16 @@
         <li class="nav-item"><a class="nav-link" href="#hyrox">Hyrox</a></li>
         <li class="nav-item"><a class="nav-link" href="#running">Running</a></li>
       </ul>
-      <span class="fw-bold small d-none d-md-inline">Carrito (0)</span>
+      <a class="fw-bold small text-decoration-none text-body" href="./buy.html" aria-label="Abrir carrito">Carrito (<span id="cart-count">0</span>)</a>
     </div>
   </nav>
 
   <main id="top">
-    <section class="sport" id="hike" aria-label="HIKE">
+    
+    <!-- Aquí empieza sección sobre hike -->
+    <section class="sport" id="hike" aria-label="HIKE" data-id="hike">
 
+      <!-- Video sobre hike -->
       <div class="scroll-video bg-tint">
         <div class="stage bg-tint">
           <video muted playsinline preload="auto" aria-hidden="true">
@@ -45,7 +48,6 @@
               <div class="col-lg-9">
                 <h2 class="fw-black fw-bolder text-uppercase m-0">HIKE</h2>
               </div>
-              <!-- <div class="col-lg-3 d-none d-lg-block"><p class="lead fw-medium m-0">${s.lead}</p></div> -->
             </div>
           </div>
           <div class="progress position-absolute bottom-0 start-0 end-0 rounded-0">
@@ -54,6 +56,7 @@
         </div>
       </div>
 
+      <!-- Descripción sobre hike -->
       <div class="bg-tint py-5 w-100">
         <div class="container-fluid py-lg-4 px-4">
           <div class="row g-4 g-lg-5">
@@ -62,25 +65,20 @@
             </div>
             <div class="col-12 col-lg-6">
               <p class="fs-5">
-
                 El hiking se trata de constancia más que de velocidad. Con calzado que agarre, una mochila bien ajustada
                 y capas que puedas quitar y poner, cualquier ruta se vuelve más ligera.
               </p>
               <p class="fs-5">
-
                 Elige según el terreno: sendero seco, roca suelta o lluvia de montaña.
               </p>
               <ul class="list-group list-group-flush mt-3">
                 <li class="list-group-item bg-transparent px-0 fw-medium border-dark-subtle">
-
                   Calzado con suela de agarre para terreno irregular
                 </li>
                 <li class="list-group-item bg-transparent px-0 fw-medium border-dark-subtle">
-
                   Mochila de 20 a 30 L para salidas de un día
                 </li>
                 <li class="list-group-item bg-transparent px-0 fw-medium border-dark-subtle">
-
                   Capas: base transpirable, abrigo y cortaviento
                 </li>
               </ul>
@@ -89,15 +87,15 @@
         </div>
       </div>
 
-
+      <!-- Productos de hike -->
       <div class="container py-5">
         <div class="d-flex justify-content-between align-items-baseline mb-3">
           <h4 class="fw-bolder m-0">Equipo para hike</h4>
         </div>
         <div class="row row-cols-2 row-cols-lg-4 g-3">
-
+          <!-- Primer producto -->
           <div class="col">
-            <a class="card border-0 rounded-0 text-decoration-none text-body" href="#hike">
+            <a class="card product-card border-0 rounded-0 text-decoration-none text-body" data-id="hike-product-1" href="#hike">
               <div class="ratio ratio-1x1 bg-light overflow-hidden card-img-top-wrap">
                 <img src="./assets/images/1696322-500-580.png" alt="ropa de hike"
                   loading="lazy" onerror="this.remove()">
@@ -109,8 +107,7 @@
               </div>
             </a>
           </div>
-
-
+          <!-- Segundo producto -->
           <div class="col">
             <a class="card border-0 rounded-0 text-decoration-none text-body" href="#hike">
               <div class="ratio ratio-1x1 bg-light overflow-hidden card-img-top-wrap">
@@ -124,10 +121,7 @@
               </div>
             </a>
           </div>
-
-
-
-
+          <!-- Tercer producto -->
           <div class="col">
             <a class="card border-0 rounded-0 text-decoration-none text-body" href="#hike">
               <div class="ratio ratio-1x1 bg-light overflow-hidden card-img-top-wrap">
@@ -141,8 +135,7 @@
               </div>
             </a>
           </div>
-
-
+          <!-- Cuarto producto -->
           <div class="col">
             <a class="card border-0 rounded-0 text-decoration-none text-body" href="#hike">
               <div class="ratio ratio-1x1 bg-light overflow-hidden card-img-top-wrap">
@@ -158,12 +151,12 @@
           </div>
 
         </div>
-
-
     </section>
 
-    <section class="sport" id="cycling" aria-label="Cycling">
+    <!-- Aquí empieza sección sobre ciclismo -->
+    <section class="sport" id="cycling" aria-label="Cycling" data-id="cycling">
 
+      <!-- Video sobre ciclismo -->
       <div class="scroll-video bg-tint">
         <div class="stage bg-tint">
           <video muted playsinline preload="auto" aria-hidden="true">
@@ -175,7 +168,6 @@
               <div class="col-lg-9">
                 <h2 class="fw-black fw-bolder text-uppercase m-0">Ciclismo</h2>
               </div>
-              <!-- <div class="col-lg-3 d-none d-lg-block"><p class="lead fw-medium m-0">${s.lead}</p></div> -->
             </div>
           </div>
           <div class="progress position-absolute bottom-0 start-0 end-0 rounded-0">
@@ -184,6 +176,7 @@
         </div>
       </div>
 
+      <!-- Resumen sobre ciclismo -->
       <div class="bg-tint py-5 w-100">
         <div class="container-fluid py-lg-4 px-4">
           <div class="row g-4 g-lg-5">
@@ -216,13 +209,13 @@
         </div>
       </div>
 
+      <!-- Productos a la venta de ciclismo -->
       <div class="container py-5">
         <div class="d-flex justify-content-between align-items-baseline mb-3">
           <h4 class="fw-bolder m-0">Equipo para ciclismo</h4>
-
         </div>
         <div class="row row-cols-2 row-cols-lg-4 g-3">
-
+          <!-- Primer producto -->
           <div class="col">
             <a class="card border-0 rounded-0 text-decoration-none text-body" href="#cycling">
               <div class="ratio ratio-1x1 bg-light overflow-hidden card-img-top-wrap">
@@ -236,7 +229,7 @@
               </div>
             </a>
           </div>
-
+          <!-- Segundo producto -->
           <div class="col">
             <a class="card border-0 rounded-0 text-decoration-none text-body" href="#cycling">
               <div class="ratio ratio-1x1 bg-light overflow-hidden card-img-top-wrap">
@@ -250,6 +243,7 @@
               </div>
             </a>
           </div>
+          <!-- Tercer producto -->
           <div class="col">
             <a class="card border-0 rounded-0 text-decoration-none text-body" href="#cycling">
               <div class="ratio ratio-1x1 bg-light overflow-hidden card-img-top-wrap">
@@ -263,6 +257,7 @@
               </div>
             </a>
           </div>
+          <!-- Cuarto producto -->
           <div class="col">
             <a class="card border-0 rounded-0 text-decoration-none text-body" href="#cycling">
               <div class="ratio ratio-1x1 bg-light overflow-hidden card-img-top-wrap">
@@ -281,8 +276,10 @@
       </div>
     </section>
 
+    <!-- Aquí empieza sección sobre hyrox -->
+    <section class="sport" id="hyrox" aria-label="HYROX" data-id="hyrox">
 
-    <section class="sport" id="hyrox" aria-label="HYROX">
+      <!-- Video sobre hyrox -->
       <div class="scroll-video bg-tint">
         <div class="stage bg-tint">
           <video muted playsinline preload="auto" aria-hidden="true"><source src="./assets/videos/hyrox.mp4" type="video/mp4"></video>
@@ -298,6 +295,7 @@
         </div>
       </div>
 
+      <!-- Descripción de hyrox -->
       <div class="bg-tint py-5 w-100">
         <div class="container-fluid py-lg-4 px-4">
           <div class="row g-4 g-lg-5">
@@ -327,12 +325,13 @@
         </div>
       </div>
 
+      <!-- Venta de productos de hyrox -->
       <div class="container py-5">
         <div class="d-flex justify-content-between align-items-baseline mb-3">
           <h4 class="fw-bolder m-0">Equipo para hyrox</h4>
         </div>
         <div class="row row-cols-2 row-cols-lg-4 g-3">
-          
+          <!-- Primer producto -->
           <div class="col">
             <a class="card border-0 rounded-0 text-decoration-none text-body" href="#hyrox">
               <div class="ratio ratio-1x1 bg-light overflow-hidden card-img-top-wrap">
@@ -345,7 +344,7 @@
               </div>
             </a>
           </div>
-
+          <!-- Segundo producto -->
           <div class="col">
             <a class="card border-0 rounded-0 text-decoration-none text-body" href="#hyrox">
               <div class="ratio ratio-1x1 bg-light overflow-hidden card-img-top-wrap">
@@ -358,7 +357,7 @@
               </div>
             </a>
           </div>
-
+          <!-- Tercer producto -->
           <div class="col">
             <a class="card border-0 rounded-0 text-decoration-none text-body" href="#hyrox">
               <div class="ratio ratio-1x1 bg-light overflow-hidden card-img-top-wrap">
@@ -371,7 +370,7 @@
               </div>
             </a>
           </div>
-
+          <!-- Cuarto producto -->
           <div class="col">
             <a class="card border-0 rounded-0 text-decoration-none text-body" href="#hyrox">
               <div class="ratio ratio-1x1 bg-light overflow-hidden card-img-top-wrap">
@@ -385,11 +384,12 @@
             </a>
           </div>
         </div>
-
     </section>
-     <!--- aqui va la parte de Isaac --->
-    <section class="sport" id="running" aria-label="running">
+    
+    <!-- Aquí empieza la sección de running -->
+    <section class="sport" id="running" aria-label="running" data-id="running">
 
+      <!-- Video sobre running -->
       <div class="scroll-video bg-tint">
         <div class="stage bg-tint">
           <video muted playsinline preload="auto" aria-hidden="true"><source src="./assets/videos/running.mp4" type="video/mp4"></video>
@@ -397,7 +397,6 @@
           <div class="container-fluid px-3 px-md-5 position-absolute bottom-0 start-0 end-0 pb-4 pb-md-5">
             <div class="row align-items-end">
               <div class="col-lg-9"><h2 class="fw-black fw-bolder text-uppercase m-0">Running</h2></div>
-              <!-- <div class="col-lg-3 d-none d-lg-block"><p class="lead fw-medium m-0">${s.lead}</p></div> -->
             </div>
           </div>
           <div class="progress position-absolute bottom-0 start-0 end-0 rounded-0">
@@ -406,6 +405,7 @@
         </div>
       </div>
 
+      <!-- Descripción de running -->
       <div class="bg-tint py-5 w-100">
         <div class="container-fluid py-lg-4 px-4">
           <div class="row g-4 g-lg-5">
@@ -435,12 +435,13 @@
         </div>
       </div>
 
+      <!-- Venta de productos de running -->
       <div class="container py-5">
         <div class="d-flex justify-content-between align-items-baseline mb-3">
           <h4 class="fw-bolder m-0">Equipo para running</h4>
         </div>
         <div class="row row-cols-2 row-cols-lg-4 g-3">
-          
+          <!-- Primer producto -->
           <div class="col">
             <a class="card border-0 rounded-0 text-decoration-none text-body" href="#running">
               <div class="ratio ratio-1x1 bg-light overflow-hidden card-img-top-wrap">
@@ -453,7 +454,7 @@
               </div>
             </a>
           </div>
-          <!--- Seundo objeto--->
+          <!-- Seundo objeto -->
            <div class="col">
             <a class="card border-0 rounded-0 text-decoration-none text-body" href="#running">
               <div class="ratio ratio-1x1 bg-light overflow-hidden card-img-top-wrap">
@@ -466,7 +467,7 @@
               </div>
             </a>
           </div>
-          <!--- tercer objeto --->
+          <!-- tercer objeto -->
            <div class="col">
             <a class="card border-0 rounded-0 text-decoration-none text-body" href="#running">
               <div class="ratio ratio-1x1 bg-light overflow-hidden card-img-top-wrap">
@@ -479,7 +480,7 @@
               </div>
             </a>
           </div>
-          <!--- cuarto objeto --->
+          <!-- cuarto objeto -->
            <div class="col">
             <a class="card border-0 rounded-0 text-decoration-none text-body" href="#running">
               <div class="ratio ratio-1x1 bg-light overflow-hidden card-img-top-wrap">
@@ -496,7 +497,6 @@
       </div>
 
     </section>
-
     
   </main>
 
@@ -508,6 +508,7 @@
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
 
+  <script src="./js/cart.js"></script>
   <script src="./js/main.js"></script>
 </body>
 
